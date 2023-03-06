@@ -1,0 +1,193 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+:root{
+    --default-font-colour: #383837;
+}
+*{
+    margin: 0;
+}
+
+body {
+	line-height: 1;
+    
+}
+
+ol, ul {
+	list-style: none;
+}
+#main{
+    margin: 10rem;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.headshot{
+    border-radius: 50%;
+    transform: translateY(3rem);
+    margin-right: 1rem;
+    /* width: 100px;
+    height: 100px; */
+}
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+nav{
+    grid-row: 1;
+ 
+}
+.logo{
+    grid-row: 1;
+    grid-column: 1;
+    text-decoration: none;
+    color: var(--default-font-colour);
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.35em;
+    margin: 0 0 2.5em 4.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+.about{
+    font-family: 'Golos Text', sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: -0.035em;
+    line-height: 1.3;
+    color: var(--default-font-colour);
+}
+.interests{
+    font-family: 'Golos Text', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-weight:lighter;
+    font-size: 1.2em;
+    color: var(--default-font-colour);
+}
+
+.tiles{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    position: relative;
+    width: 400px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.image__img{
+    display: block;
+    width: 100%;
+}
+
+.image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.6);
+    color: white;
+    /* add font */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.image__overlay__blur{
+    backdrop-filter: blur(5px);
+}
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+.image__overlay:hover > *{
+    transform: translateY(0);
+}
+.image__title{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Golos Text', sans-serif;
+    margin-bottom: 3em;
+    margin-left: 1rem;
+}
+
+.image_description{
+    position: absolute;
+    font-size: 1.25em;
+    margin-top: 6em;
+    margin-bottom: 3em;
+    padding: 1rem;
+    font-family: 'Golos Text', sans-serif;
+    font-size: 1em;
+}
+
+/* Footer */
+#footer{
+    padding: 5em 0 6em 0;
+    background-color: #f6f6f6;
+}
+#footer > h2{
+    font-size: 1.1em;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0 0 2em 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    font-family: 'Golos Text', sans-serif;
+}
+
+
+/* Icon */
+.icon_wrapper{
+    margin-left: 5rem;
+}
+.icon {
+    
+    margin-right: 1.5rem;
+    text-decoration: none;
+    border-bottom: none;
+    color: #383837;
+    display: inline;
+    font-style: normal;
+    font-variant: normal;   
+    line-height: 1;  
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+       
+}
+
+    
+    .icon > .label {
+        display: none;
+    }
+
+   
+
+    .icon.solid:before {
+        font-weight: 900;
+    }
+
+    .icon.brands:before {
+        font-family: 'Font Awesome 5 Brands';
+    }
+
+    
