@@ -24,12 +24,19 @@ ol, ul {
     display: grid;
     grid-template-rows: auto auto auto;
 }
-.headshot{
+.headshot-wrapper{
+     width: 100px;
+    height: 100px;
     border-radius: 50%;
-    transform: translateY(3rem);
-    margin-right: 1rem;
-    /* width: 100px;
-    height: 100px; */
+    overflow: hidden;
+}
+.headshot{
+ 
+    transform: translateY(-1.2rem);
+    /* margin-right: 1rem; */
+    width: 99.5%;
+    height: auto;
+   
 }
 header{
     display: grid;
@@ -39,19 +46,28 @@ nav{
     grid-row: 1;
  
 }
-.logo{
-    grid-row: 1;
-    grid-column: 1;
-    text-decoration: none;
-    color: var(--default-font-colour);
+.logo {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4.5em;
     font-family: 'Golos Text', sans-serif;
     font-weight: 900;
     letter-spacing: 0.35em;
-    margin: 0 0 2.5em 4.5em;
-    text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
-}
+    text-decoration: none;
+    color: var(--default-font-colour);
+  }
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--default-font-colour);
+  }
+  
+  .title {
+    margin-left: 1rem;
+  }
 
 
 .about{
